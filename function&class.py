@@ -83,7 +83,7 @@ class animal() :
 
     # 静态方法
     # 静态方法不能使用实例属性，不能调用实例方法
-    # 但是可以用对象.静态方法来调用
+    # 但是可以用对象.静态方法来调用，也可以通过类名.静态方法调用
     @staticmethod
     def what():
         print('This is a static method')
@@ -99,3 +99,15 @@ dog.what()
 dog.cm()
 animal.cm()
 
+print("-----------------------------------------------")
+
+# 权限控制
+class student :
+    
+    # 前后都有双下划线的是特殊方法
+    def __init__(self, name, age, gender):
+        self._name = name # protected，允许类和子类访问，不允许外部代码访问（但实际上好像可以
+        self.__age = age # private，只允许定义该属性或方法的类本身进行访问
+        self.gender = gender # public
+
+        # 变量和方法都遵循上述规定

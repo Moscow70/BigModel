@@ -3,7 +3,4 @@
     "python.formatting.provider": "yapf",
     "python.linting.flake8Args": ["--max-line-length=248"],
     "python.linting.pylintEnabled": false
-    // "terminal.integrated.env.windows" : {
-    //     "OPENAI_API_KEY" : "sk-vkD6BPzRuC5IuRR6FJ54OoX9NCOeLXF29ZfJklsn7pjzWtx3"
-    // }
 }
